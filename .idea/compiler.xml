@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="ManagerProject.service-manager-project.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="ManagerProject.service-backlog" target="11" />
+      <module name="ManagerProject.service-backlog.main" target="11" />
+      <module name="ManagerProject.service-backlog.test" target="11" />
+      <module name="ManagerProject.service-config" target="11" />
+      <module name="ManagerProject.service-config.main" target="11" />
+      <module name="ManagerProject.service-config.test" target="11" />
+      <module name="ManagerProject.service-project" target="11" />
+      <module name="ManagerProject.service-project.main" target="11" />
+      <module name="ManagerProject.service-project.test" target="11" />
+      <module name="ManagerProject.service-projectTask" target="11" />
+      <module name="ManagerProject.service-projectTask.main" target="11" />
+      <module name="ManagerProject.service-projectTask.test" target="11" />
+      <module name="ManagerProject.service-register" target="11" />
+      <module name="ManagerProject.service-register.main" target="11" />
+      <module name="ManagerProject.service-register.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
