@@ -2,10 +2,12 @@ package co.com.poli.managerProject.controllers;
 
 import co.com.poli.managerProject.dto.BacklogDto;
 import co.com.poli.managerProject.entities.Backlog;
+import co.com.poli.managerProject.entities.ProjectTask;
 import co.com.poli.managerProject.helpers.FormatMessage;
 import co.com.poli.managerProject.helpers.Response;
 import co.com.poli.managerProject.helpers.ResponseBuilder;
 import co.com.poli.managerProject.services.backlog.IBacklogService;
+import co.com.poli.managerProject.services.projectTask.IProjectTaskService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +23,7 @@ import java.util.List;
 @AllArgsConstructor
 public class BacklogController {
 
+    private final IProjectTaskService projectTaskService;
     private final IBacklogService iBacklogService;
     private final ResponseBuilder responseBuilder;
     private final ModelMapper modelMapper;
@@ -41,7 +44,7 @@ public class BacklogController {
 
     @PostMapping()
     public ResponseEntity<Response> save(@Valid @RequestBody BacklogDto backlogDto, BindingResult result) {
-
+        //ProjectTask projectTask = projectTaskService.findById(backlogDto);
 
         if (result.hasErrors()) {
             return new ResponseEntity<>(responseBuilder.failed(FormatMessage.formatMessage(result)),

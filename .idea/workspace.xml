@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Implementacion de controladores, repositories, services, dtos y metodos findAll en todos los micros" />
+    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Implementacion de controladores, repositories, services, dtos y metodos findAll en todos los micros">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/BacklogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/BacklogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Backlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/ProjectTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/IBacklogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/IBacklogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/IProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/IProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/IProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/IProjectTaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/ProjectTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/ProjectTaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +144,10 @@
       <workItem from="1638040912170" duration="2401000" />
       <workItem from="1638043358407" duration="3333000" />
       <workItem from="1638046745266" duration="3040000" />
-      <workItem from="1638053202607" duration="2756000" />
+      <workItem from="1638053202607" duration="5987000" />
+      <workItem from="1638118420328" duration="456000" />
+      <workItem from="1638123413760" duration="607000" />
+      <workItem from="1638125257693" duration="4714000" />
     </task>
     <task id="LOCAL-00001" summary="Implementación capas y logica project.&#10;Falta:&#10;- Implementacion DTO&#10;- Datos del micro backlog y projectTask">
       <created>1637953106531</created>

@@ -1,5 +1,6 @@
 package co.com.poli.managerProject.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -48,7 +49,8 @@ public class ProjectTask {
     @Column(name = "project_identifier", nullable = false, unique = true, updatable = false)
     private String projectIdentifier;
 
-    @ManyToOne()
+    @JsonBackReference()
     @JoinColumn(name = "backlog_id")
+    @ManyToOne()
     private Backlog backlog;
 }

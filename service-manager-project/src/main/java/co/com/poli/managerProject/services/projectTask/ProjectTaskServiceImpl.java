@@ -17,4 +17,9 @@ public class ProjectTaskServiceImpl implements IProjectTaskService {
     public List<ProjectTask> findAll() {
         return iProjectTaskRepository.findAll();
     }
+
+    @Override
+    public ProjectTask findById(Long id) {
+        return iProjectTaskRepository.findById(id).orElse(null);
+    }
 }

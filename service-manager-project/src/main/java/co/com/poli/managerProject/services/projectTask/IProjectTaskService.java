@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IProjectTaskService {
     List<ProjectTask> findAll();
+    ProjectTask findById(Long id);
 }

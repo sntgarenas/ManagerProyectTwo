@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.Valid;
 import java.io.Serializable;
 import java.util.List;
 
@@ -35,9 +36,9 @@ public class Backlog {
     @OneToOne(fetch = FetchType.LAZY)
     private Project project;
 
-    @JoinColumn(name = "projecttask_id")
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JsonIgnoreProperties({"hibernateLazyInitializer","handler"})
+
+    @JsonManagedReference
+    @OneToMany(mappedBy = "backlog", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<ProjectTask> projectTasks;
 
 }
