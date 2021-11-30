@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Implementacion de los metodos post y gest para los dominios backlog, project y projectTask, solo faltan validaciones de id de relación entre registros de base de datos." />
+    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Implementacion de los metodos post y gest para los dominios backlog, project y projectTask, solo faltan validaciones de id de relación entre registros de base de datos.">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectTaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectTaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectTaskDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +32,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -128,7 +141,7 @@
       <workItem from="1638123413760" duration="607000" />
       <workItem from="1638125257693" duration="4992000" />
       <workItem from="1638153996634" duration="1850000" />
-      <workItem from="1638232981690" duration="6516000" />
+      <workItem from="1638232981690" duration="8339000" />
     </task>
     <task id="LOCAL-00001" summary="Implementación capas y logica project.&#10;Falta:&#10;- Implementacion DTO&#10;- Datos del micro backlog y projectTask">
       <created>1637953106531</created>
@@ -172,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638240116915</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implementacion de los metodos post y gest para los dominios backlog, project y projectTask, solo faltan validaciones de id de relación entre registros de base de datos.">
+      <created>1638240136712</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638240136712</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

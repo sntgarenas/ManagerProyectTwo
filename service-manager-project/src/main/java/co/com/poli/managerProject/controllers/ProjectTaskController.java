@@ -1,7 +1,6 @@
 package co.com.poli.managerProject.controllers;
 
 import co.com.poli.managerProject.dto.ProjectTaskDto;
-import co.com.poli.managerProject.entities.Backlog;
 import co.com.poli.managerProject.entities.ProjectTask;
 import co.com.poli.managerProject.helpers.FormatMessage;
 import co.com.poli.managerProject.helpers.Response;
@@ -60,5 +59,25 @@ public class ProjectTaskController {
 
         return new ResponseEntity<>(responseBuilder.successCreated(projectTask, request.getRequestURI()),
                 HttpStatus.CREATED);
+    }
+
+    @GetMapping("/project/{projectIdentifier}")
+    public ResponseEntity<Response> findProjectTasks(@PathVariable String projectIdentifier) {
+        return null;
+    }
+
+    @GetMapping("/hours/project/{projectIdentifier}")
+    public ResponseEntity<Response> getTotalHoursForProject(@PathVariable String projectIdentifier) {
+        return null;
+    }
+
+    @GetMapping("/hours/project/{projectIdentifier}/{status}")
+    public ResponseEntity<Response> getTotalProjectHoursForStatus(@PathVariable String projectIdentifier, @PathVariable String status) {
+        return null;
+    }
+
+    @PutMapping("/{idTask}/{projectIdentifier}")
+    public ResponseEntity<Response> deleteTask(@PathVariable String idTask, @PathVariable String projectIdentifier) {
+        return null;
     }
 }
