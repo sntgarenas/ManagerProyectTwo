@@ -39,7 +39,7 @@ public class Project  {
     @Column(name = "end_date")
     private Date endDate;
 
-    //@JsonManagedReference
+    @JsonManagedReference
     @JsonIgnoreProperties("project")
     @OneToOne(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private Backlog backlog;

@@ -31,14 +31,13 @@ public class Backlog {
 
     //@JsonBackReference
     //@JsonIgnoreProperties("backlog")
+    @JsonBackReference
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @JoinColumn(name = "project_id")
     @OneToOne(fetch = FetchType.LAZY)
     private Project project;
 
-
     @JsonManagedReference
-    @OneToMany(mappedBy = "backlog", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "backlog", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     private List<ProjectTask> projectTasks;
-
 }

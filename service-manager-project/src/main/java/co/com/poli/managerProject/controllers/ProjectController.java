@@ -13,6 +13,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import co.com.poli.managerProject.helpers.Response;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -26,33 +27,33 @@ public class ProjectController {
     private final ModelMapper modelMapper;
 
     @GetMapping()
-    public Response findAll() {
+    public Response findAll(HttpServletRequest request) {
         List<Project> projects = iProjectService.findAll();
 
         if (projects.isEmpty()) {
-            return responseBuilder.failed("Not are projects");
+            return responseBuilder.failed("Not are projects", request.getRequestURI());
         }
 
-        return responseBuilder.success(projects);
+        return responseBuilder.success(projects, request.getRequestURI());
     }
 
     @PostMapping()
-    public ResponseEntity<Response> save(@Valid @RequestBody ProjectDto projectDto, BindingResult result) {
+    public ResponseEntity<Response> save(@Valid @RequestBody ProjectDto projectDto, BindingResult result, HttpServletRequest request) {
         if (result.hasErrors()) {
-            return new ResponseEntity<>(responseBuilder.failed(FormatMessage.formatMessage(result)),
+            return new ResponseEntity<>(responseBuilder.failed(FormatMessage.formatMessage(result), request.getRequestURI()),
                     HttpStatus.BAD_REQUEST);
         }
 
         Project project = modelMapper.map(projectDto, Project.class);
 
         if (iProjectService.findProjectByProjectNameOrProjectIdentifier(project.getProjectName(), project.getProjectIdentifier()) != null) {
-            return new ResponseEntity<>(responseBuilder.failed("Nombre del proyecto o identificador del proyecto ya existen"),
+            return new ResponseEntity<>(responseBuilder.failed("Nombre del proyecto o identificador del proyecto ya existen", request.getRequestURI()),
                     HttpStatus.BAD_REQUEST);
         }
 
         iProjectService.save(project);
 
-        return new ResponseEntity<>(responseBuilder.success(project),
+        return new ResponseEntity<>(responseBuilder.success(project, request.getRequestURI()),
                 HttpStatus.CREATED);
     }
 }

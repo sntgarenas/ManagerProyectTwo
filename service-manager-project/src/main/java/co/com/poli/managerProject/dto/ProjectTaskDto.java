@@ -1,5 +1,6 @@
 package co.com.poli.managerProject.dto;
 
+import co.com.poli.managerProject.entities.Backlog;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
 
@@ -29,4 +30,6 @@ public class ProjectTaskDto {
 
     @NotBlank(message = "Identificador del proyecto no puede estar vacio")
     private String projectIdentifier;
+
+    private Backlog backlog;
 }

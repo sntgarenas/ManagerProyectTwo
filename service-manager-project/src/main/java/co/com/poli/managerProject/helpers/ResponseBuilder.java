@@ -6,24 +6,31 @@ import org.springframework.stereotype.Component;
 @Component
 public class ResponseBuilder {
 
-    public Response success(){
+    public Response success(String uri){
         return Response.builder()
                 .data(HttpStatus.OK)
-                .status(HttpStatus.OK.value())
+                .Uri(uri)
                 .build();
     }
 
-    public Response success(Object data){
+    public Response success(Object data, String uri){
         return Response.builder()
                 .data(data)
-                .status(HttpStatus.OK.value())
+                .Uri(uri)
                 .build();
     }
 
-    public Response failed(Object data){
+    public Response successCreated(Object data, String uri) {
         return Response.builder()
                 .data(data)
-                .status(HttpStatus.INTERNAL_SERVER_ERROR.value())
+                .Uri(uri)
+                .build();
+    }
+
+    public Response failed(Object data, String uri){
+        return Response.builder()
+                .data(data)
+                .Uri(uri)
                 .build();
     }
 }

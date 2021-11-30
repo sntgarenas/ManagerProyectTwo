@@ -22,4 +22,9 @@ public class BacklogServiceImpl implements IBacklogService {
     public void save(Backlog backlog) {
         backlogRepository.save(backlog);
     }
+
+    @Override
+    public Backlog findBacklogByProjectIdentifier(String projectIdentifier) {
+        return backlogRepository.findBacklogByProjectIdentifier(projectIdentifier);
+    }
 }

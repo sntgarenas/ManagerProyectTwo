@@ -51,6 +51,6 @@ public class ProjectTask {
 
     @JsonBackReference()
     @JoinColumn(name = "backlog_id")
-    @ManyToOne()
+    @ManyToOne(fetch = FetchType.EAGER)
     private Backlog backlog;
 }

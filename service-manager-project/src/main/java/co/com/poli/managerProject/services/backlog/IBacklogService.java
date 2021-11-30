@@ -8,4 +8,5 @@ import java.util.List;
 public interface IBacklogService {
     List<Backlog> findAll();
     void save(Backlog backlog);
+    Backlog findBacklogByProjectIdentifier(String projectIdentifier);
 }

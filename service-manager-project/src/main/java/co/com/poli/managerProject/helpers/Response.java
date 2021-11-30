@@ -7,5 +7,5 @@ import lombok.Data;
 @Builder
 public class Response {
     private Object data;
-    private Integer status;
+    private String Uri;
 }

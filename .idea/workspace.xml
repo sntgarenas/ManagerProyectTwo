@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Implementacion de controladores, repositories, services, dtos y metodos findAll en todos los micros">
+    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Post y Get de proyect listo">
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,13 +15,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/BacklogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/BacklogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectTaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/BacklogDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/BacklogDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectTaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectTaskDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Backlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/ProjectTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/helpers/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/helpers/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/helpers/ResponseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/helpers/ResponseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IBacklogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IBacklogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/BacklogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/BacklogServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/IBacklogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/IBacklogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/IProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/IProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/ProjectServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/IProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/IProjectTaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/ProjectTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/ProjectTaskServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" afterDir="false" />
@@ -147,7 +153,9 @@
       <workItem from="1638053202607" duration="5987000" />
       <workItem from="1638118420328" duration="456000" />
       <workItem from="1638123413760" duration="607000" />
-      <workItem from="1638125257693" duration="4714000" />
+      <workItem from="1638125257693" duration="4992000" />
+      <workItem from="1638153996634" duration="1850000" />
+      <workItem from="1638232981690" duration="6215000" />
     </task>
     <task id="LOCAL-00001" summary="Implementación capas y logica project.&#10;Falta:&#10;- Implementacion DTO&#10;- Datos del micro backlog y projectTask">
       <created>1637953106531</created>
@@ -177,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637988258819</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Post y Get de proyect listo">
+      <created>1638130396618</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638130396618</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +215,7 @@
     <MESSAGE value="Entidades, dto y helpers en micro Backlog y ProjectTask" />
     <MESSAGE value="Añadido resto de archivos(faltan las implementaciones de ellos)" />
     <MESSAGE value="Implementacion de controladores, repositories, services, dtos y metodos findAll en todos los micros" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementacion de controladores, repositories, services, dtos y metodos findAll en todos los micros" />
+    <MESSAGE value="Post y Get de proyect listo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Post y Get de proyect listo" />
   </component>
 </project>
