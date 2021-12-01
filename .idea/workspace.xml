@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Implementacion de los metodos post y gest para los dominios backlog, project y projectTask, solo faltan validaciones de id de relación entre registros de base de datos.">
+    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Datos precargados en el archivo import.sql y firma del resto de rutas en el controllador projecttask.">
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
@@ -12,9 +12,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/ManagerProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/ManagerProjectApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectTaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectTaskDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/ProjectTaskDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Backlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/IProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/IProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/ProjectTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/ProjectTaskServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +148,9 @@
       <workItem from="1638123413760" duration="607000" />
       <workItem from="1638125257693" duration="4992000" />
       <workItem from="1638153996634" duration="1850000" />
-      <workItem from="1638232981690" duration="8339000" />
+      <workItem from="1638232981690" duration="8779000" />
+      <workItem from="1638311695509" duration="1633000" />
+      <workItem from="1638326391733" duration="5069000" />
     </task>
     <task id="LOCAL-00001" summary="Implementación capas y logica project.&#10;Falta:&#10;- Implementacion DTO&#10;- Datos del micro backlog y projectTask">
       <created>1637953106531</created>
@@ -192,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638240136712</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Datos precargados en el archivo import.sql y firma del resto de rutas en el controllador projecttask.">
+      <created>1638242212323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638242212323</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +233,7 @@
     <MESSAGE value="Implementacion de controladores, repositories, services, dtos y metodos findAll en todos los micros" />
     <MESSAGE value="Post y Get de proyect listo" />
     <MESSAGE value="Implementacion de los metodos post y gest para los dominios backlog, project y projectTask, solo faltan validaciones de id de relación entre registros de base de datos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementacion de los metodos post y gest para los dominios backlog, project y projectTask, solo faltan validaciones de id de relación entre registros de base de datos." />
+    <MESSAGE value="Datos precargados en el archivo import.sql y firma del resto de rutas en el controllador projecttask." />
+    <option name="LAST_COMMIT_MESSAGE" value="Datos precargados en el archivo import.sql y firma del resto de rutas en el controllador projecttask." />
   </component>
 </project>

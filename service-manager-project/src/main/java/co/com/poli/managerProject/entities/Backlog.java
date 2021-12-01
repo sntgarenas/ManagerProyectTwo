@@ -29,8 +29,6 @@ public class Backlog {
     @Column(name = "project_identifier", nullable = false)
     private String projectIdentifier;
 
-    //@JsonBackReference
-    //@JsonIgnoreProperties("backlog")
     @JsonBackReference
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @JoinColumn(name = "project_id")
