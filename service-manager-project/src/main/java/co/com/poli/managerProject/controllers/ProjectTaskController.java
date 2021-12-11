@@ -3,9 +3,9 @@ package co.com.poli.managerProject.controllers;
 import co.com.poli.managerProject.dto.ProjectTaskDto;
 import co.com.poli.managerProject.entities.Project;
 import co.com.poli.managerProject.entities.ProjectTask;
-import co.com.poli.managerProject.helpers.FormatMessage;
-import co.com.poli.managerProject.helpers.Response;
-import co.com.poli.managerProject.helpers.ResponseBuilder;
+import com.example.multimodule.service.helpers.FormatMessage;
+import com.example.multimodule.service.helpers.Response;
+import com.example.multimodule.service.helpers.ResponseBuilder;
 import co.com.poli.managerProject.services.project.IProjectService;
 import co.com.poli.managerProject.services.projectTask.IProjectTaskService;
 import lombok.AllArgsConstructor;
@@ -28,7 +28,6 @@ public class ProjectTaskController {
 
     private final IProjectTaskService projectTaskService;
     private IProjectService projectService;
-    private final ResponseBuilder responseBuilder;
     private final ModelMapper modelMapper;
 
     @GetMapping()
@@ -36,33 +35,33 @@ public class ProjectTaskController {
         List<ProjectTask> projectTasks = projectTaskService.findAll();
 
         if (projectTasks.isEmpty()) {
-            return new ResponseEntity<>(responseBuilder.failed("Not are project tasks", request.getRequestURI()),
+            return new ResponseEntity<>(ResponseBuilder.failed("Not are project tasks", request.getRequestURI()),
                     HttpStatus.NO_CONTENT);
         }
 
-        return new ResponseEntity<>(responseBuilder.success(projectTasks, request.getRequestURI()),
+        return new ResponseEntity<>(ResponseBuilder.success(projectTasks, request.getRequestURI()),
                 HttpStatus.OK);
     }
 
     @PostMapping()
     public ResponseEntity<Response> save(@Valid @RequestBody ProjectTaskDto projectTaskDto, BindingResult result, HttpServletRequest request) {
         if (result.hasErrors()) {
-            return new ResponseEntity<>(responseBuilder.failed(FormatMessage.formatMessage(result), request.getRequestURI()),
+            return new ResponseEntity<>(ResponseBuilder.failed(FormatMessage.formatMessage(result), request.getRequestURI()),
                     HttpStatus.BAD_REQUEST);
-        } /*else {
-            ProjectTask projectTask = projectTaskService.findProjectTaskByProjectIdentifierOrBacklog(projectTaskDto.getProjectIdentifier(),
-                    projectTaskDto.getBacklog());
+        }
 
-            if (projectTask != null) {
-                return new ResponseEntity<>(responseBuilder.failed("El identificador ya existe o el backlog no existe", request.getRequestURI()),
-                        HttpStatus.BAD_REQUEST);
-            }
-        }*/
+        ProjectTask task =  projectTaskService.findProjectTaskByNameAndProjectIdentifier(projectTaskDto.getName(), projectTaskDto.getProjectIdentifier());
+        ProjectTask taskIdentifier = projectTaskService.findProjectTaskByProjectIdentifier(projectTaskDto.getProjectIdentifier());
+
+        if(task != null || taskIdentifier != null) {
+            return new ResponseEntity<>(ResponseBuilder.failed("El identificador del proyecto ya existe para este nombre", request.getRequestURI()),
+                    HttpStatus.BAD_REQUEST);
+        }
 
         ProjectTask projectTask = modelMapper.map(projectTaskDto, ProjectTask.class);
         projectTaskService.save(projectTask);
 
-        return new ResponseEntity<>(responseBuilder.successCreated(projectTask, request.getRequestURI()),
+        return new ResponseEntity<>(ResponseBuilder.successCreated(projectTask, request.getRequestURI()),
                 HttpStatus.CREATED);
     }
 
@@ -71,11 +70,11 @@ public class ProjectTaskController {
         List<Project> projects = projectService.findProjectByProjectIdentifier(projectIdentifier);
 
         if (projects.isEmpty()) {
-            return new ResponseEntity<>(responseBuilder.failed("Not are projects", request.getRequestURI()),
+            return new ResponseEntity<>(ResponseBuilder.failed("Not are projects", request.getRequestURI()),
                     HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(responseBuilder.success(projects.get(0).getBacklog().getProjectTasks(), request.getRequestURI()),
+        return new ResponseEntity<>(ResponseBuilder.success(projects.get(0).getBacklog().getProjectTasks(), request.getRequestURI()),
                 HttpStatus.OK);
     }
 
@@ -84,13 +83,13 @@ public class ProjectTaskController {
         List<Project> projects = projectService.findProjectByProjectIdentifier(projectIdentifier);
 
        if (projects.isEmpty()) {
-            return new ResponseEntity<>(responseBuilder.failed("Not are projects", request.getRequestURI()),
+            return new ResponseEntity<>(ResponseBuilder.failed("Not are projects", request.getRequestURI()),
                     HttpStatus.NOT_FOUND);
         }
 
         Integer totalHoursProject = projectService.getTotalHoursOfProject(projects);
 
-        return new ResponseEntity<>(responseBuilder.success(totalHoursProject, request.getRequestURI()),
+        return new ResponseEntity<>(ResponseBuilder.success(totalHoursProject, request.getRequestURI()),
                 HttpStatus.OK);
     }
 
@@ -99,13 +98,13 @@ public class ProjectTaskController {
         List<Project> projects = projectService.findProjectByProjectIdentifier(projectIdentifier);
 
         if (projects.isEmpty()) {
-            return new ResponseEntity<>(responseBuilder.failed("Not are projects", request.getRequestURI()),
+            return new ResponseEntity<>(ResponseBuilder.failed("Not are projects", request.getRequestURI()),
                     HttpStatus.NOT_FOUND);
         }
 
         Integer totalHoursProject = projectService.getTotalHourOfProjectByStatus(projects, status);
 
-        return new ResponseEntity<>(responseBuilder.success(totalHoursProject, request.getRequestURI()),
+        return new ResponseEntity<>(ResponseBuilder.success(totalHoursProject, request.getRequestURI()),
                 HttpStatus.OK);
     }
 
@@ -114,7 +113,7 @@ public class ProjectTaskController {
         List<Project> projects = projectService.findProjectByProjectIdentifier(projectIdentifier);
 
         if (projects.isEmpty()) {
-            return new ResponseEntity<>(responseBuilder.failed("Not are projects", request.getRequestURI()),
+            return new ResponseEntity<>(ResponseBuilder.failed("Not are projects", request.getRequestURI()),
                     HttpStatus.NOT_FOUND);
         }
 
@@ -125,7 +124,7 @@ public class ProjectTaskController {
                     projectTaskService.save(projectTask);
                 }).collect(Collectors.toList());
 
-        return new ResponseEntity<>(responseBuilder.success(projectTasks.get(0), request.getRequestURI()),
+        return new ResponseEntity<>(ResponseBuilder.success(projectTasks.get(0), request.getRequestURI()),
                 HttpStatus.OK);
     }
 }

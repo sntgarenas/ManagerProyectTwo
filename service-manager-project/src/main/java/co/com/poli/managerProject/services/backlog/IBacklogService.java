@@ -9,4 +9,5 @@ public interface IBacklogService {
     List<Backlog> findAll();
     void save(Backlog backlog);
     Backlog findBacklogByProjectIdentifier(String projectIdentifier);
+    Backlog findBacklogByProjectOrderById(Project project);
 }

@@ -9,13 +9,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.Valid;
-import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "backlog")
-@Data
+@Data//De la libreria lombok
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,13 +27,13 @@ public class Backlog {
     @Column(name = "project_identifier", nullable = false)
     private String projectIdentifier;
 
-    @JsonBackReference
+    @JsonBackReference //Evitar ciclo infinito
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @JoinColumn(name = "project_id")
     @OneToOne(fetch = FetchType.LAZY)
     private Project project;
 
-    @JsonManagedReference
+    @JsonManagedReference //Evitar ciclo infinito
     @OneToMany(mappedBy = "backlog", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     private List<ProjectTask> projectTasks;
 }

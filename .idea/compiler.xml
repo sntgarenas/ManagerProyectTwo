@@ -8,9 +8,13 @@
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
         </processorPath>
         <module name="ManagerProject.service-manager-project.main" />
+        <module name="ManagerProject.common.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="ManagerProject.manager-project" target="11" />
+      <module name="ManagerProject.manager-project.main" target="11" />
+      <module name="ManagerProject.manager-project.test" target="11" />
       <module name="ManagerProject.service-backlog" target="11" />
       <module name="ManagerProject.service-backlog.main" target="11" />
       <module name="ManagerProject.service-backlog.test" target="11" />

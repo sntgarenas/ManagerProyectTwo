@@ -1,4 +1,4 @@
-package co.com.poli.managerProject.helpers;
+package com.example.multimodule.service.helpers;
 
 import lombok.Builder;
 import lombok.Data;

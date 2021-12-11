@@ -4,13 +4,10 @@ import co.com.poli.managerProject.entities.Project;
 import co.com.poli.managerProject.entities.ProjectTask;
 import co.com.poli.managerProject.repositories.IProjectRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.PersistenceException;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 @Service()
 @AllArgsConstructor

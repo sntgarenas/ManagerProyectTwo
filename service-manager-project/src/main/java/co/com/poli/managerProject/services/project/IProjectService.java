@@ -1,8 +1,6 @@
 package co.com.poli.managerProject.services.project;
 
 import co.com.poli.managerProject.entities.Project;
-import co.com.poli.managerProject.entities.ProjectTask;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

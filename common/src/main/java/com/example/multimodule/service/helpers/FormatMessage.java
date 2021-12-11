@@ -1,9 +1,10 @@
-package co.com.poli.managerProject.helpers;
+package com.example.multimodule.service.helpers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.validation.BindingResult;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,6 +28,8 @@ public class FormatMessage {
             json = objectMapper.writeValueAsString(errorMessage);
         }catch (JsonProcessingException ex){
             ex.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return json;
     }

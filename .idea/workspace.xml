@@ -4,25 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Datos precargados en el archivo import.sql y firma del resto de rutas en el controllador projecttask.">
+    <list default="true" id="f9455481-b45d-4d8f-8f67-85d937f072f4" name="Changes" comment="Libreria comons y pruebas unitarias">
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/ManagerProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/ManagerProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/BacklogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/BacklogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/controllers/ProjectTaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/BacklogDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/dto/BacklogDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Backlog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/entities/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/helpers/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/multimodule/service/helpers/ErrorMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/helpers/FormatMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/multimodule/service/helpers/FormatMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/helpers/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/multimodule/service/helpers/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/helpers/ResponseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/example/multimodule/service/helpers/ResponseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IBacklogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IBacklogRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/repositories/IProjectTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/BacklogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/BacklogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/IBacklogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/backlog/IBacklogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/IProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/IProjectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/project/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/IProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/IProjectTaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/ProjectTaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/java/co/com/poli/managerProject/services/projectTask/ProjectTaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/service-manager-project/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +54,43 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ManagerProject" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ManagerProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ManagerProject" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,16 +120,107 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\Desarrollo\1 PROYECTO MONO\ManagerProject" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="co.com.poli.projectTask.helpers" />
       <recent name="co.com.poli.backlog.helpers" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.BacklogApplication">
+    <configuration name="ManagerProject [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;co.com.poli.managerProject.repositories.ProjectRepositoryTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":service-manager-project:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectRepositoryTest.when_findByProjectsIdentifier_return_ListProject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;co.com.poli.managerProject.repositories.ProjectRepositoryTest.when_findByProjectsIdentifier_return_ListProject&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":service-manager-project:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ProjectServiceTest.when_findByProjectsIdentifier_return_ListProject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;co.com.poli.managerProject.services.ProjectServiceTest.when_findByProjectsIdentifier_return_ListProject&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":service-manager-project:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="BacklogApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ManagerProject.service-manager-project.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="co.com.poli.managerProject.ManagerProjectApplication" />
@@ -121,6 +263,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ManagerProject [build]" />
+        <item itemvalue="Gradle.ProjectServiceTest.when_findByProjectsIdentifier_return_ListProject" />
+        <item itemvalue="Gradle.ProjectRepositoryTest" />
+        <item itemvalue="Gradle.ProjectRepositoryTest.when_findByProjectsIdentifier_return_ListProject" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -150,7 +300,16 @@
       <workItem from="1638153996634" duration="1850000" />
       <workItem from="1638232981690" duration="8779000" />
       <workItem from="1638311695509" duration="1633000" />
-      <workItem from="1638326391733" duration="5069000" />
+      <workItem from="1638326391733" duration="5332000" />
+      <workItem from="1638380332374" duration="3798000" />
+      <workItem from="1638384570239" duration="4000" />
+      <workItem from="1638487004484" duration="1262000" />
+      <workItem from="1638491064552" duration="3521000" />
+      <workItem from="1638495789321" duration="31000" />
+      <workItem from="1638838358210" duration="749000" />
+      <workItem from="1639098168093" duration="8713000" />
+      <workItem from="1639107012434" duration="1541000" />
+      <workItem from="1639177399645" duration="5610000" />
     </task>
     <task id="LOCAL-00001" summary="Implementación capas y logica project.&#10;Falta:&#10;- Implementacion DTO&#10;- Datos del micro backlog y projectTask">
       <created>1637953106531</created>
@@ -208,11 +367,121 @@
       <option name="project" value="LOCAL" />
       <updated>1638242212323</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implementacion de todos los contractos(faltan ajustes)">
+      <created>1638331640252</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638331640252</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.xml.bind:jakarta.xml.bind-api" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:jul-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:org.javassist:javassist" />
+    <option featureType="dependencySupport" implementationName="java:com.zaxxer:HikariCP" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:accessors-smart" />
+    <option featureType="dependencySupport" implementationName="java:org.aspectj:aspectjweaver" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-test" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml:classmate" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-core" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jsr310" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:jaxb-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.skyscreamer:jsonassert" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-websocket" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:ch.qos.logback:logback-classic" />
+    <option featureType="dependencySupport" implementationName="java:org.mockito:mockito-junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:txw2" />
+    <option featureType="dependencySupport" implementationName="java:org.opentest4j:opentest4j" />
+    <option featureType="dependencySupport" implementationName="java:org.objenesis:objenesis" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-tx" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-rsa" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-jcl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-web" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-logging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-aop" />
+    <option featureType="dependencySupport" implementationName="java:org.bouncycastle:bcprov-jdk15on" />
+    <option featureType="dependencySupport" implementationName="java:ch.qos.logback:logback-core" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-databind" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss.logging:jboss-logging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-devtools" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-api" />
+    <option featureType="dependencySupport" implementationName="java:org.ow2.asm:asm" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-commons" />
+    <option featureType="dependencySupport" implementationName="java:antlr:antlr" />
+    <option featureType="dependencySupport" implementationName="java:org.yaml:snakeyaml" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-autoconfigure" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-test-autoconfigure" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-json" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-expression" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish:jakarta.el" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jdk8" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="java:org.assertj:assertj-core" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.module:jackson-module-parameter-names" />
+    <option featureType="dependencySupport" implementationName="java:com.vaadin.external.google:android-json" />
+    <option featureType="dependencySupport" implementationName="java:org.apiguardian:apiguardian-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-jdbc" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-jdbc" />
+    <option featureType="dependencySupport" implementationName="java:org.mockito:mockito-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.transaction:jakarta.transaction-api" />
+    <option featureType="dependencySupport" implementationName="java:org.xmlunit:xmlunit-core" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-params" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-validation" />
+    <option featureType="dependencySupport" implementationName="java:org.hamcrest:hamcrest" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-data-jpa" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy-agent" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-engine" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-aspects" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss:jandex" />
+    <option featureType="dependencySupport" implementationName="java:com.h2database:h2" />
+    <option featureType="dependencySupport" implementationName="java:org.dom4j:dom4j" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-test" />
+    <option featureType="dependencySupport" implementationName="java:com.jayway.jsonpath:json-path" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-beans" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.common:hibernate-commons-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-jpa" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-starter" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.activation:jakarta.activation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-engine" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-crypto" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-tomcat" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-test" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-core" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-commons" />
+    <option featureType="dependencySupport" implementationName="java:aopalliance:aopalliance" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.annotation:jakarta.annotation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-orm" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-starter-bootstrap" />
+    <option featureType="dependencySupport" implementationName="java:org.modelmapper:modelmapper" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-context" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.istack:istack-commons-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-aop" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-api" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:json-smart" />
+    <option featureType="dependencySupport" implementationName="java:org.bouncycastle:bcpkix-jdk15on" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-web" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.activation:jakarta.activation" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -234,6 +503,8 @@
     <MESSAGE value="Post y Get de proyect listo" />
     <MESSAGE value="Implementacion de los metodos post y gest para los dominios backlog, project y projectTask, solo faltan validaciones de id de relación entre registros de base de datos." />
     <MESSAGE value="Datos precargados en el archivo import.sql y firma del resto de rutas en el controllador projecttask." />
-    <option name="LAST_COMMIT_MESSAGE" value="Datos precargados en el archivo import.sql y firma del resto de rutas en el controllador projecttask." />
+    <MESSAGE value="Implementacion de todos los contractos(faltan ajustes)" />
+    <MESSAGE value="Libreria comons y pruebas unitarias" />
+    <option name="LAST_COMMIT_MESSAGE" value="Libreria comons y pruebas unitarias" />
   </component>
 </project>

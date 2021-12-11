@@ -8,9 +8,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation:2.4.12'
     implementation 'org.modelmapper:modelmapper:2.3.9'
-    //implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation project(':common')//Libreria commons - multiproyectos
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
-    //implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 
     runtimeOnly 'com.h2database:h2'
 }

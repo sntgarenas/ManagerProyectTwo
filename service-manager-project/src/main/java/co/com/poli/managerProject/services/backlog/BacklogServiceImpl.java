@@ -1,6 +1,7 @@
 package co.com.poli.managerProject.services.backlog;
 
 import co.com.poli.managerProject.entities.Backlog;
+import co.com.poli.managerProject.entities.Project;
 import co.com.poli.managerProject.repositories.IBacklogRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -26,5 +27,10 @@ public class BacklogServiceImpl implements IBacklogService {
     @Override
     public Backlog findBacklogByProjectIdentifier(String projectIdentifier) {
         return backlogRepository.findBacklogByProjectIdentifier(projectIdentifier);
+    }
+
+    @Override
+    public Backlog findBacklogByProjectOrderById(Project project) {
+        return backlogRepository.findBacklogByProjectOrderById(project);
     }
 }

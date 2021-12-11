@@ -7,7 +7,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 
 @Service
 @AllArgsConstructor
@@ -21,17 +20,17 @@ public class ProjectTaskServiceImpl implements IProjectTaskService {
     }
 
     @Override
-    public ProjectTask findById(Long id) {
-        return iProjectTaskRepository.findById(id).orElse(null);
-    }
-
-    @Override
     public void save(ProjectTask projectTask) {
         iProjectTaskRepository.save(projectTask);
     }
 
     @Override
-    public ProjectTask findProjectTaskByProjectIdentifierOrBacklog(String projectIdentifier, Backlog backlog) {
-        return iProjectTaskRepository.findProjectTaskByProjectIdentifierOrBacklog(projectIdentifier, backlog);
+    public ProjectTask findProjectTaskByNameAndProjectIdentifier(String name, String projectIdentifier) {
+        return iProjectTaskRepository.findProjectTaskByNameAndProjectIdentifier(name, projectIdentifier);
+    }
+
+    @Override
+    public ProjectTask findProjectTaskByProjectIdentifier(String projectIdentifier) {
+        return iProjectTaskRepository.findProjectTaskByProjectIdentifier(projectIdentifier);
     }
 }
